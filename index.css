@@ -50,6 +50,7 @@ header {
     position: relative;
     height: 100%;
     width: 100%;
+    margin-bottom : 2rem;
 }
 .carrousel .img-section{
     position: relative;
@@ -87,3 +88,42 @@ header {
 .active-dot{
     background-color: rgb(255, 255, 255);
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.desc-section{
+    width: 90%;
+    margin: 4rem;
+}
+.left{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr ;
+    text-align: right;
+}
+.desc-section img{
+    width: 100%;
+    height: auto;
+}
+.desc-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+.desc-div p{
+    font-size: 1.2rem;
+    padding: 2rem 7rem;
+}
+.desc-div .desc-title{
+    font-size: 3rem;
+}
+
