@@ -39,12 +39,12 @@ header {
 .menu-header ul li{
     list-style: none;
     font-family: 'Lato';
-    font-size: 1.5rem;
+    font-size: 1.2vw;
 }
 .menu-header nav ul{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 5rem;
 }
 .carrousel{
     position: relative;
