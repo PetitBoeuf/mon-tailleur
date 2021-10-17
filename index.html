@@ -6,64 +6,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+    <link href="uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet" defer>
+
+    
+    <title>Mon Tailleur Paris</title>
 </head>
 <body>
+    <section class="contact-pop-up">
+        <form action="#" onsubmit="return submitForm(this);" method="GET" class="contact-form">
+            <h2 class="contact-title lato">
+                Pour prendre contact avec nous..
+            </h2>
+            
+            <div class="contact-part who-part">
+                <div class="selector-part">
+                    <span class="lato">Vous êtes..</span>
+                    <select id="type-contact">
+                        <option value="Particulier"> un particulier</option>
+                        <option value="Société">une société</option>
+                    </select>
+                </div>
+                <div class="name-part">
+                    <input type="input" class="input-field lato" placeholder="Nom Prénom" name="name" id='name' required/>
+                    <label for="name" class="input-label lato">Nom Prénom</label>
+                    <span class="error-span lato">Cette information ne peut pas être vide.</span>            
+                </div>
+            </div>
+            <div class="contact-part">
+                <div class="phone-part">
+                    <input type="input" class="input-field lato" placeholder="Téléphone" name="telephone" id='telephone' required/>
+                    <label for="telephone" class="input-label lato">Téléphone</label>
+                </div>
+                <div class="message-part">
+                    <input type="input" name="message" id="message" class="input-field lato" required/>
+                    <label for="message" class="input-label lato">Message</label>
+                    <span class="error-span lato">Cette information ne peut pas être vide.</span>
+                </div>
+            </div>
+            <!-- <div class="contact-field">
+                <label class="mandated">Votre adresse e-mail</label>
+                <input name="senderMail" type="text" placeholder="exemple@email.ex">
+                <span class="errorSpan">Votre adresse mail ne peut pas être vide et doit être de la forme "exemple@email.ex".</span>            
+            </div> 
+            <div class="contact-field">
+                <label class="lato">N° de téléphone</label>
+                <input name="senderPhone" type="text" placeholder="Exemple : 08 36 65 65 65">         
+            </div>
+            <div class="contact-field">
+                <label class="lato">Message</label>
+                <textarea name="contact-body" id="contact-body" name="story" placeholder="N'oubliez pas de nous indiquer votre adresse email pour que l'on puisse vous recontacter. Que souhaitez-vous nous dire ?" rows="8"></textarea>                           
+            </div> --> 
+            <button type="submit" class="submit-form lato">Envoyer</button>      
+        </form>
+    </section>
     <header>
         <section class="menu-header">
-            <nav>
+            <!-- <nav>
                 <ul>
-                    <li>Connectez-vous</li>
-                    <li>Mesurez-vous</li>
+                    <li onclick="goto()">Contactez-nous</li>
+                    <li onclick="goto()">Mesurez-vous</li>
                 </ul>
-            </nav>
-            <img src="assets/logo.png" alt="">
-            <nav>
-                <ul>
-                    <li>Boutique</li>
-                    <li>À propos de nous</li>
-                </ul>
-            </nav>
-        </section>
-        <section class="carrousel"><!--4-6-8-9 bad ratio-->
-            <section class="img-section">
-                <img src="assets/5.jpg" alt="">
-                <img src="assets/2.jpg" alt="" class="chossure">
-            </section>
-            <div class="dots">
-                <div class="dot active-dot"></div>
-                <div class="dot"></div>
+            </nav> -->
+            <div class="main-header">
+                <div class="lookfor-searchbar-div">
+                    <input type="text" placeholder=" Vous cherchez quelque chose en particulier ? " name="search" class="search-bar-input lato">
+                    <span class="focus-border">
+                        <i></i>
+                      </span>
+                    <div class="main-arrow-container">
+                        <div class="relative-arrow-container">
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+                    <!--<button type="submit" class="button-ok-search"><i class="fa fa-search"></i></button>-->
+                </div>
+                <img src="assets/logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li onclick="goto()">
+                            <i class="fi-rr-shopping-bag"></i>
+                            Boutique
+                        </li>
+                        <li onclick="goto()">
+                            <i class="fi-rr-user"></i>                      S'inscrire/S'identifier
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <div class="main-menu">
+                <nav>
+                    <a href="" class="boutique-section lato">Vêtements Homme</a>
+                        <div class="sous-section section-homme"></div>
+                    <a href="" class="boutique-section lato">Vêtements Femme</a>
+                        <div class="sous-section section-femme"></div>
+                    <a href="" class="boutique-section lato">Accessoires</a>
+                        <div class="sous-section section-accessoires"></div>
+
+                </nav>
+            </div>
+        </section>
+        
+        <section class="carousel"><!--4-6-8-9 bad ratio-->
+            <div class="slider" data-pos="0">
+                <div class="slider__slides">
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                    <div class="slider__slide"></div>
+                </div>
+                <div class="slider__dots">
+                    <a href="#" class="slider__indicator"></a>
+                    <a href="#" class="slider__dot" data-pos="0"></a>
+                    <a href="#" class="slider__dot" data-pos="1"></a>
+                    <a href="#" class="slider__dot" data-pos="2"></a>
+                    <a href="#" class="slider__dot" data-pos="3"></a>
+                </div>
+            </div>
+            
         </section>
     </header>
 
+
     <main>
-        <section class="desc-section left">
-            <img src="assets/1.jpg" alt="">
-            <div class="desc-div">
+        <section id ="first-section-desc" class="desc-section left">
+            <img  class="animated-main-parts" src="assets/1.jpg" alt="">
+            <div class="desc-div animated-main-parts">
                 <p class="desc-title lato">
                     Lorem ipsum dolor sit amet. 
                 </p>
                 <p class="desc lato">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio explicabo aliquid cumque ut fuga numquam error facere saepe nihil atque necessitatibus, quo libero repellendus laboriosam mollitia quibusdam repudiandae? Temporibus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas, sunt atque dolore consequuntur quod, inventore, deserunt expedita reprehenderit voluptate omnis.
                 </p>
             </div>
         </section>
-        <section class="desc-section right">
-            <div class="desc-div">
+        <!-- <section id ="second-section-desc" class="desc-section right">
+            <div class="desc-div animated-main-parts">
                 <p class="desc-title lato">
                     Lorem ipsum dolor sit amet. 
                 </p>
                 <p class="desc lato">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem quod aut assumenda ratione quae dolorum, alias nulla, similique aspernatur iste illum placeat. Inventore aspernatur nobis autem officiis assumenda deserunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas, sunt atque dolore consequuntur quod, inventore, deserunt expedita reprehenderit voluptate omnis.
                 </p>
             </div>
-            <img src="assets/3.jpg" alt="">
+            <img class="animated-main-parts" src="assets/3.jpg" alt="">
+        </section> -->
+        <section class="section-samples">
+                <div class="left-side-container">
+                    <div class="image-container">
+                        <!-- <img src=""></img>
+                        <img src=""></img>
+                        <img src=""></img>
+                        <img src=""></img>
+                        <img src=""></img>
+                        <img src=""></img> -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                        <div class="golden-bg">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="desc">
+                  <!-- <p class="title"> Lorem ipsum dolor sit amet. </p>
+                  <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas, sunt atque dolore consequuntur quod, inventore, deserunt expedita reprehenderit voluptate omnis. </p> -->
+                </div>
+        </section>
+        <section class="partners">
+
         </section>
     </main>
 
     <footer>
-
+        <div class="contact">
+            <h2 class="lato">A propos de nous</h2>
+        </div>
+        <div class="mentions-legales">
+            <h2 class="lato">Mentions légales</h2>
+        </div>
+        <div class="reseaux"> 
+            <h2 class="lato">Nos réseaux</h2>
+            <ul>
+                <li><i class="fab fa-facebook-square"></i> Facebook</li>
+                <li><i class="fab fa-twitter-square"></i> Twitter</li>
+                <li><i class="fab fa-instagram-square"></i> Instagram</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
+

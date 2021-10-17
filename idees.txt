@@ -1,0 +1,5 @@
+-boutique comme dans hackerty avec costumes qui changent 
+-coloris de la veste (photo) qui change en fonction de la couleur choisie 
+-footer à voir
+-boutons à voir
+-menu à visualiser en fonction du site actuel de mon-tailleur
