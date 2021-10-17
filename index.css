@@ -17,6 +17,7 @@
     --s30: rgb(50,50,50);
     --t10: rgb(217, 171, 32);   
     --cream : #FFFDD0; 
+    --soft-gray : rgb(175, 175, 175);
 }
 .lato{
     font-family: 'Lato', sans-serif;
@@ -138,7 +139,7 @@ header {
     list-style: none;
     font-family: 'Lato', sans-serif;
     font-size: 1vw;
-    color: rgb(175, 175, 175);
+    color: var(--soft-gray);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,7 +393,7 @@ header {
     width: 20px;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0);
     border-radius: 50%;
-    background-color: rgb(175, 175, 175);
+    background-color: var(--soft-gray);
 }
 .active-dot{
     background-color: rgb(255, 255, 255);
@@ -433,17 +434,17 @@ main{
     align-items: space-between;
 }
 .desc-div p{
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 2rem 7rem;
+    font-weight: 400;
+    color: var(--soft-gray);
 }
 .desc-div .desc-title{
     font-size: 3rem;
-    color: black;
+    color: rgb(30, 30, 30);
+    font-weight: 600;
 }
-.desc-div .desc{
-    color: var(--t10);
-    font-weight: 400;
-}
+
 .animated-main-parts{
     opacity: 0;
     transition: all 1s ease-in-out;
@@ -478,7 +479,7 @@ main section.desc-section:nth-child(odd) .desc-div, main section.desc-section:nt
     z-index: 3;
     padding: 1.5rem;
     transition: all 1s ease-in-out;
-    display: none;
+    display:none;
 }
 .contact-form{
     display: flex;
@@ -586,20 +587,19 @@ main section.desc-section:nth-child(odd) .desc-div, main section.desc-section:nt
 .section-samples{
     background-color: rgb(30, 30, 30);
     width: 95%;
-    height: 600px;
+    height: 700px;
     display: grid;
     place-items: center;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 30% 70%;
     
     margin: 2.5rem;
-    box-shadow: 0px 10px 20px rgba(0,0,0,.6);
+    box-shadow: 0px 10px 30px rgba(0,0,0,.6);
 }
 .left-side-container{
     display: grid;
     place-items: center;
     width: 80%;
     height: 100%;
-    margin-right: 10%;
 }
 .image-container{
     position: relative;
@@ -609,45 +609,87 @@ main section.desc-section:nth-child(odd) .desc-div, main section.desc-section:nt
     width: 100%;
     z-index: 10;
 }
-.image-container span{
+.image-container img{
     position: absolute;
     width: 35%;
-    padding-bottom: 35%;
-    background-color: white;
+    height: 45%;
     margin: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0 0px 10px 1px #000;
 }
-.image-container span:nth-child(1){
+.image-container img:nth-child(1){
     top: 45%;
-    left: 0%;
-    background-color: blue;
+    left: 5%;
     z-index: 10;
 }
-.image-container span:nth-child(2){
-    background-color: red;
-    top: 0;
+.image-container img:nth-child(2){
+    top: 2%;
     z-index: 15;
 }
-.image-container span:nth-child(3){
+.image-container img:nth-child(3){
     z-index: 20;
-    right: 0%;
+    right: 5%;
     top: 45%;
-
 }
 
 .image-container .golden-bg{
     position: absolute;
-    background-color: var(--cream);
-    width: 80%;
-    padding-bottom: 50%;
+    background-color: rgb(30,30,30);
+    width: 60%;
+    padding-bottom: 45%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .section-samples .desc{
     height: 80%;
     width: 100%;
-    margin-right: 20%;
-    background-color: white;
+    margin-left: 30%;
+    display :grid;
+    place-items: center;
+}
+.section-samples .desc p{
+    color:white;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+.section-samples .desc .title{
+    font-weight: 500;
+    margin: 0;
+    font-size: 3rem;
+}
+.trust-boys-section{
+    height: 700px;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
 }
 
+.trust-boys-container{
+    display: flex;
+    gap: 2rem;
+
+}
+.trust-desc{
+    display: grid;
+    place-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.trust-title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(30, 30, 30);
+}
+.social-link{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.social-link i {
+    padding: 0.2rem;
+}
 
 
 
