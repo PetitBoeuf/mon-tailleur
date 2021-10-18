@@ -721,6 +721,7 @@ main section.desc-section:nth-child(odd) .desc-div, main section.desc-section:nt
     bottom: 0;
     width: calc(50%*30%);
     background-color: white;
+
 }
 .image-container img:nth-child(1){
     top: 45%;
@@ -863,20 +864,36 @@ main section.desc-section:nth-child(odd) .desc-div, main section.desc-section:nt
 
 /*-----------------------FOOTER--------------------*/
 footer{
-    height: 30vh;
+    height: auto;
     background-color: rgb(30, 30, 30);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    padding: 2rem;
+    padding: 4rem;
+    padding-top: 1rem;
     margin-top: 2rem;
+    position: relative;
+}
+footer div:nth-child(2){
+    text-align: center;
+}
+footer div:nth-child(3){
+
+}
+footer div{
+    position: relative;
+}
+footer div h2{
+    margin: 1rem;
 }
 footer div h2{
     color: goldenrod;
     text-transform: uppercase;
 }
 .reseaux ul li{
+    text-align: right;
     display: flex;
+    justify-content: flex-end;
     text-decoration: none;
     list-style: none;
     font-family: 'Lato', sans-serif;
@@ -886,8 +903,29 @@ footer div h2{
 }
 .reseaux ul li i {
     font-size: 1.5rem;
-    margin-right: .5rem;
+    margin-left: .5rem;
 }
 .reseaux ul li:hover{
     cursor: pointer;
+}
+
+footer div :not(h2){
+    color: white;
+}
+footer div span{
+    line-height: 2rem;
+}
+footer div p{
+    font-weight: 300;
+
+}
+.footer-btn{
+    position: absolute;
+    text-decoration: none;
+    line-height: 2rem;
+    color: goldenrod;
+    font-weight: 500;
+    left: 50%;
+    bottom: -2.5rem;
+    transform: translateX(-50%);
 }

@@ -41,4 +41,9 @@ window.addEventListener('scroll', function() {
 		document.querySelector("#second-section-desc").childNodes[1].classList.add("visible-animated-part");
 		document.querySelector("#second-section-desc").childNodes[3].classList.add("visible-animated-part");
 	}
+	/*if(isScrolledIntoView(document.querySelector(".section-samples"))){
+		document.querySelector(".image-container").childNodes[1].classList.add("visible-animated-part");
+		document.querySelector(".image-container").childNodes[3].classList.add("visible-animated-part");
+		document.querySelector(".image-container").childNodes[5].classList.add("visible-animated-part");
+	}*/
 });
