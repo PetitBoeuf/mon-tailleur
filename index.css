@@ -738,6 +738,12 @@ main section.desc-section:nth-child(odd) .desc-div, main section.desc-section:nt
 }
 .social-link i {
     padding: 0.2rem;
+    font-size: 1.5rem;
+    margin: .1rem 1rem;
+    color: black;
+    border-radius: 3px;
+    color: goldenrod;
+
 }
 
 .bis-title{

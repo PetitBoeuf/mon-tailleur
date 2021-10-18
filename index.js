@@ -42,3 +42,16 @@ window.addEventListener('scroll', function() {
 		document.querySelector("#second-section-desc").childNodes[3].classList.add("visible-animated-part");
 	}
 });
+
+document.querySelector(".trust-boy").addEventListener("click", (event)=>{
+	console.log(event);
+	goto(event.target.getAttribute('gotoarg'));	
+});
+
+function goto(url){
+	console.log(url)
+	window.open(
+		url,
+		'_blank' // <- This is what makes it open in a new window.
+	  );
+}
