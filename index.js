@@ -47,3 +47,10 @@ window.addEventListener('scroll', function() {
 		document.querySelector(".image-container").childNodes[5].classList.add("visible-animated-part");
 	}*/
 });
+
+function goto(url){
+	window.open(
+		url,
+		"_blank"
+	);
+}
