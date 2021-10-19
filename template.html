@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="non-index.css">
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
     <link href="uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet" defer>
@@ -69,14 +70,18 @@
                 </ul>
             </nav> -->
             <div class="main-header">
-                <div class="lookfor-searchbar-div">
-                    <input type="text" placeholder=" Vous cherchez quelque chose en particulier ? " name="search" class="search-bar-input lato">
-                    <i class="fi-rr-search"></i>
-                </div>
-                <img id="main-logo" src="assets/logo.png" alt="" onclick="gotointernal('index.html')">
+                <nav> 
+                    <ul>
+                        <li onclick="goto('index.html')">
+                            <i class="fi-rr-home"></i>
+                            Accueil
+                        </li>
+                    </ul>
+                </nav>
+                <img id="main-logo" src="assets/logo.png" alt="">
                 <nav>
                     <ul>
-                        <li onclick="gotointernal('shop.html')">
+                        <li onclick="goto('shop.html')">
                             <i class="fi-rr-shopping-bag"></i>
                             Boutique
                         </li>
@@ -170,93 +175,6 @@
 
 
     <main>
-        <section id ="first-section-desc" class="desc-section left">
-            <img  class="animated-main-parts" src="assets/1.jpg" alt="">
-            <div class="desc-div animated-main-parts">
-                <p class="desc-title lato">
-                    Lorem ipsum dolor sit amet. 
-                </p>
-                <p class="desc lato">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas, sunt atque dolore consequuntur quod, inventore, deserunt expedita reprehenderit voluptate omnis.
-                </p>
-            </div>
-        </section>
-        <!-- <section id ="second-section-desc" class="desc-section right">
-            <div class="desc-div animated-main-parts">
-                <p class="desc-title lato">
-                    Lorem ipsum dolor sit amet. 
-                </p>
-                <p class="desc lato">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas, sunt atque dolore consequuntur quod, inventore, deserunt expedita reprehenderit voluptate omnis.
-                </p>
-            </div>
-            <img class="animated-main-parts" src="assets/3.jpg" alt="">
-        </section> -->
-        <section class="section-samples">
-            <div class="desc">
-                <p class="title lato"> Lorem ipsum dolor sit amet. </p>
-                <p class="lato">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas, sunt atque dolore consequuntur quod, inventore, deserunt expedita reprehenderit voluptate omnis </p> 
-            </div>
-            <div class="left-side-container">
-                <div class="image-container">
-                    <img src="assets/25013-11.jpg"></img>
-                    <img src="assets/25013-9.jpg"></img>
-                    <img src="assets/25013-10.jpg"></img>
-                    
-                    <div class="golden-bg">
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="trust-boys-section">
-            <p class="trust-title lato">Ils nous font confiance..</p>
-            <div class="trust-boys-container">
-                <div class="trust-boy" onclick="goto('https://www.instagram.com/ogbofficiel')">
-                    <img src="assets/ogb.png">
-                    <div class="trust-desc">
-                        <p class="trust-name">
-                            OGB
-                        </p>
-                        <span></span>
-                        <div class="social-link">
-                            <i class="fab fa-instagram"></i>
-                            <p>Instagram</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="trust-boy"
-                onclick="goto('https://www.instagram.com/keryjamesofficial')">
-                    <img src="assets/keryjames.png">
-                    <div class="trust-desc">
-                        <p class="trust-name">
-                            Kerry James
-                        </p>
-                        <span></span>
-                        <div class="social-link">
-                            <i class="fab fa-instagram"></i>
-                            <p>Instagram</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="trust-boy" onclick="goto('https://www.instagram.com/saaggo/')">
-                    <img src="assets/saaggo.png">
-
-                    <div class="trust-desc">
-                        <p class="trust-name">
-                            Saaggo
-                        </p>
-                        <span></span>
-                        <div class="social-link">
-                            <i class="fab fa-instagram"></i>
-                            <p>Instagram</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="trust-title bis-title lato"> Alors pourquoi pas vous ? </p>
-
-        </section>
     </main>
 
     <footer>
@@ -290,4 +208,3 @@
     </footer>
 </body>
 </html>
-

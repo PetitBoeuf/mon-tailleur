@@ -54,3 +54,6 @@ function goto(url){
 		"_blank"
 	);
 }
+function gotointernal(url){
+	window.location.href=url;
+}
