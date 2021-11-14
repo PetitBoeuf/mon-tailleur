@@ -154,15 +154,55 @@
     </header>
 
 
-    <main>
-        <div class="search-bar-container">
-            <span class="results">Résultats de votre recherche pour : <span class="typed-search"></span></span>
-            <div class="search-bar">
-                <input type="text" placeholder="Tapez votre recherche ici...">
-                <i class="fi-rr-search"></i>
-                <span class="bordered-input"></span>
-            </div>
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Tapez votre recherche ici...">
+            <i class="fi-rr-search"></i>
+            <span class="bordered-input"></span>
         </div>
+        <span class="results lato">Résultats de votre recherche pour : <span class="typed-search"></span></span>
+    </div>
+
+    <main>
+
+        <div class="filter-side">
+            <div class="filters">
+                <h3 class="filter-title lato">
+                    Filtres
+                </h3>
+                <div class="color-filters">
+                    <h2 class="filter-title lato">Choisissez une couleur</h2>
+                    <img src="assets/25000-1.jpg" alt="Filtre 1" srcset="">
+                    <img src="assets/25000-2.jpg" alt="Filtre 2" srcset="">
+                    <img src="assets/25000-3.jpg" alt="Filtre 3" srcset="">
+                    <img src="assets/25000-4.jpg" alt="Filtre 4" srcset="">
+                    <img src="assets/25000-5.jpg" alt="Filtre 5" srcset="">
+                    <img src="assets/25000-6.jpg" alt="Filtre 6" srcset="">
+                </div>
+                <div class="style-filters">
+                    <h2 class="filter-title lato">Choisissez un style</h2>
+                    <div class="style-option">
+                        <input type="checkbox" name="corse" id="style-corse">
+                        <label class="lato" for="style-corse">Corse</label>
+                    </div>
+                    <div class="style-option">
+                        <input type="checkbox" name="taille" id="style-taille">
+                        <label class="lato" for="style-taille">Taillé</label>
+                    </div>
+                    <div class="style-option">
+                        <input type="checkbox" name="ocean" id="style-ocean">
+                        <label class="lato" for="style-ocean">Océan</label>
+                    </div>
+                    <div class="style-option">
+                        <input type="checkbox" name="atypique" id="style-atypique">
+                        <label class="lato" for="style-atypique">Atypique</label>
+                    </div>
+                </div>
+            </div>
+            <button class="apply-filters-button lato">Appliquer</button>
+        </div>
+        <hr class="main-separator">
+        <div class="nav-side"></div>
 
     </main>
 
